@@ -37,6 +37,8 @@ yggdrasilctl getself | grep address | xargs
 # store ygg:ipv6:addr + hostname-ygg in /etc/hosts
 echo "$(yggdrasil -address -useconffile /etc/yggdrasil.conf) $(echo $HOSTNAME | awk '{split($0,a,"."); print a[1]}')-ygg" >> /etc/hosts
 
-echo -e "Yggdrasil ipv6 address stored with hostname $(echo $HOSTNAME | awk '{split($0,a,"."); print a[1]}')-ygg in /etc/hosts.\
-You can change this should you wish.\
-\n\nSetup complete!"
+echo "Yggdrasil ipv6 address stored with hostname $(echo $HOSTNAME | awk '{split($0,a,"."); print a[1]}')-ygg in /etc/hosts.
+You can change this should you wish.
+
+
+Setup complete!"
